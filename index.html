@@ -4,12 +4,12 @@
 	<base href="/"><!--needed for angular HTML5 mode -->
 	<title>Kingdom Hearts 3 News!</title>
 	<link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.css">
-	<script type="text/javascript" src="bower_components/angular/angular.js"></script>
-	<script type="text/javacript" src="bower_components/angular/angular-route/angular-route.js"></script>
-	<style type="text/css">
-		body{
-			padding-top: 200px;
-		}
+    <script type="text/javascript" src="bower_components/angular/angular.js"></script>
+    <script type="text/javascript" src="bower_components/angular-route/angular-route.js"></script>
+    <style>
+    	body {
+    		padding-top: 70px;
+    	}
 	</style>
 </head>
 <body>
@@ -20,11 +20,12 @@
 			</div>
 			<ul class="nav navbar-nav navbar-right">
 				<li><a href="/">Home</a></li>
-				<li><a href="/accounts/newsletter">Newsletter</a></li>
+				<li><a href="/newsletter">Newsletter</a></li>
 			</ul>
 		</div>
 	</nav>
 	<div ng-view>
+
 	</div>
 <script src='js/app.js'></script>
 <script src='js/controller.js'></script>
