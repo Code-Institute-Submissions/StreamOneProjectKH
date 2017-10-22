@@ -9,5 +9,17 @@ angular.module('KHApp').config(function($locationProvider, $routeProvider) {
 	.when('/newsletter', {
 		templateUrl: 'templates/newsletter.html',
 		controller: 'newsletterController'
+	})
+	.when('/blog', {
+		templateUrl: 'templates/blog.html',
+		controller: 'blogController'
+	})
+	.when('/media', {
+		templateUrl: 'templates/media.html',
+		controller: 'mediaController'
+	})
+	.when('/characters', {
+		templateUrl: 'templates/characters.html',
+		controller: 'charactersController'
 	});
 });

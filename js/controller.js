@@ -12,4 +12,13 @@ angular.module('RouteControllers', [])
 			}
 			console.log($scope.signupUser.username + " " + $scope.signupUser.password);
 		}
+	})
+	.controller('charactersController', function($scope){
+
+	})
+	.controller('blogController', function($scope){
+		
+	})
+	.controller('mediaController', function($scope){
+		
 	});
