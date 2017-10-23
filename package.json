@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/Zaniron/StreamOneProjectKH/issues"
   },
-  "homepage": "https://github.com/Zaniron/StreamOneProjectKH#readme"
+  "homepage": "https://github.com/Zaniron/StreamOneProjectKH#readme",
+  "dependencies": {
+    "jquery": "^3.2.1"
+  }
 }

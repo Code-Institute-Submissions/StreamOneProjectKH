@@ -1,20 +1,30 @@
 <!DOCTYPE html>
 <html ng-app='KHApp'>
 <head>
+	<meta name="viewport" content="width=device-width initial-scale=1">
+	<meta charset="utf-8">
 	<base href="/"><!--needed for angular HTML5 mode -->
 	<title>Kingdom Hearts 3 News!</title>
-	<link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.css">
-	<link rel="stylesheet" type="text/css" href="css/style.css">
     <script type="text/javascript" src="bower_components/angular/angular.js"></script>
     <script type="text/javascript" src="bower_components/angular-route/angular-route.js"></script>
+    <script type="text/javascript" src="bower_components/jquery/dist/jquery.js"></script>
+    <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.css">
+    <script type="text/javascript" src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
 	<nav class="navbar navbar-inverse navbar-fixed-top">
 		<div class="container-fluid">
 			<div class="navbar-header">
-				<a class="navbar-brand" href="/"><img alt="Oathkeeper" src="img/Oathkeeper.png" width="100px" height="45px"></a>
+				<a class="navbar-brand" href="/">KH News</a>
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+					<span class="sr-only">Toggle Navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
 			</div>
-			<ul class="nav navbar-nav navbar-right">
+			<ul class="nav navbar-nav collapse navbar-collapse">
 				<li><a href="/">Home</a></li>
 				<li><a href="/newsletter">Newsletter</a></li>
 				<li><a href="/characters">Characters</a></li>
