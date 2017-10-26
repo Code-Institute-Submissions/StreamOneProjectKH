@@ -1,6 +1,6 @@
 angular.module('RouteControllers', [])
 	.controller('HomeController', function($scope) {
-		$scope.title = "Testing for kingdom hearts news";
+		$scope.title = "Kingdom Hearts 3 News!";
 	})
 	.controller('newsletterController', function($scope){
 		$scope.signupUser = {};
