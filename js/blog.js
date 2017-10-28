@@ -10,8 +10,8 @@ var dateDec = new Date("23 Oct 2017");
 var theDate = dateDec.toDateString();
 console.log(theDate);
 console.log(dateDec);
-//document.getElementById('dateForBlog').innerHTML = theDate;
-document.getElementById('blogFrame').contentWindow.document.getElementById('dateForBlog').innerHTML = theDate;
+document.getElementById('dateForBlog').innerHTML = theDate;
+//document.getElementById('blogFrame').contentWindow.document.getElementById('dateForBlog').innerHTML = theDate;
 
 // $(document).ready(function(){
 // 	var dateDec = new Date("23 Oct 2017");
