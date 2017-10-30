@@ -10,6 +10,7 @@ body{
 	background-color: rgba(255,0,0,.5);
 	font-size: 24px;
 	border-radius: 10px;
+	margin-bottom: 2px;
 }
 
 .container{
@@ -19,4 +20,23 @@ body{
 .jumbotron{
 	font-size: 2em;
 	text-align: center;
+}
+
+img{
+	float: left;
+}
+
+.floatRight{
+	float: right;
+}
+h2{
+	text-align: center;
+}
+
+.blogHead{
+	display: inline;
+	text-align: center;
+}
+.blogHead h2{
+	font-weight: bold;
 }
