@@ -26,3 +26,16 @@ document.getElementById('dateForBlog').innerHTML = theDate;
 // 	var d = new Date(23 Oct 2017);
 // 	obj.innerHTML = d;
 // }
+
+// $document.ready(function(){
+// 	$(".blogHead").mouseenter(function(){
+// 		$(".blogHead").addClass("blue");
+// 	});
+// });
+
+function blogOver(obj){
+	obj.style.backgroundColor = "#ffffff"
+}
+function blogOut(obj){
+	obj.style.backgroundColor = ""
+}
