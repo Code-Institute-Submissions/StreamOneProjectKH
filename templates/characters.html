@@ -1,10 +1,19 @@
 <div class="container">
 	<div class="row">
-		<div class="col-sm-12 col-md-12 col-lg-12">
+		<div class="testRed col-sm-12 col-md-12 col-lg-12">
 			<h1>Characters</h1>
-		</div>
-		<p>Here will be a slideshow, with images of the characters plus a paragraph of info on them</p>
+			<select onchange="displayChar(this.value)">
+				<option value="">Please Select</option>
+				<option value="Sora">Sora</option>
+				<option value="Riku">Riku</option>
+				<option value="Kairi">Kairi</option>
+			</select>
 
-		<p id="testchar"></p>
+			<hr>
+			<p id="charName"></p>
+			<div id="charImage"></div>
+			<p id="charInfo"></p>
+			<div id="charWeapon"></div>
+		</div>
 	</div>
 </div>

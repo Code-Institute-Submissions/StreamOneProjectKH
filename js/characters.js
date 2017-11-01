@@ -1,25 +1,43 @@
-function character(name, charImg, info, weapon){
+function character(name, info, weapon){
 	this.name = name;
-	this.charImg = charImg;
 	this.info = info;
 	this.weapon = weapon;
 }
 
 var sora = new character(
 	"Sora", 
-	soraImg, 
 	"Sora is the main protagonist", 
 	"Keyblade"
 );
 
-var soraImg = new Image();
-soraImg.src = "img/Sora.png";
-
 var riku = new character(
 	"Riku",
-	"img/riku.png",
 	"Riku is a complex guy",
 	"Way To The Dawn"
 );
 
-document.getElementById("testchar").innerHTML = sora.charImg;
+function displayChar(charChoice){
+	if(charChoice == "Sora")
+	{
+		document.getElementById("charName").innerHTML = sora.name;
+		portrait("img/Sora.png");
+		document.getElementById("charInfo").innerHTML = sora.info;
+		weapon("img/Oathkeeper.png");
+	}
+	if(charChoice == "Riku")
+	{
+		document.getElementById("charImage").innerHTML = riku.charImg;
+	}
+}
+
+function portrait(source){
+	var charPortrait = new Image();
+	charPortrait.src = source;
+	$("#charImage").html(charPortrait);
+}
+
+function weapon(source){
+	var charWeapon = new Image();
+	charWeapon.src = source;
+	$("#charWeapon").html(charWeapon);
+}
