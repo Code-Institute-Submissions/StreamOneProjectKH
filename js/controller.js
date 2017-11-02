@@ -25,4 +25,16 @@ angular.module('RouteControllers', [])
 	})
 	.controller('mediaController', function($scope){
 		
+	})
+	.controller('trailerController', function($scope){
+		$scope.reveal = false;
+		$scope.toggle = function(){
+			$scope.reveal = !$scope.reveal;
+		}
+	})
+	.controller('audioController', function($scope){
+		$scope.reveal = false;
+		$scope.toggle = function(){
+			$scope.reveal = !$scope.reveal;
+		}
 	});
