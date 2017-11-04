@@ -1,5 +1,10 @@
 body{
-	padding-top: 70px;
+	padding-top: 50px;
+	font-family: 'Raleway', sans-serif;
+	background-image: url("../img/KHbg.png");
+	background-repeat: repeat;
+	background-attachment: fixed;
+	color: white;
 }
 
 .navbar{
@@ -9,8 +14,6 @@ body{
 .testRed{
 	background-color: rgba(255,0,0,.5);
 	font-size: 24px;
-	border-radius: 10px;
-	margin-bottom: 2px;
 }
 
 .container{
@@ -20,6 +23,7 @@ body{
 .jumbotron{
 	font-size: 2em;
 	text-align: center;
+	background-color: rgba(100,135,239,0.2);
 }
 
 img{
@@ -43,4 +47,17 @@ h2{
 
 .blue{
 	background-color: blue;
+}
+
+footer{
+	position: fixed;
+	display: block;
+	width: 100%;
+	bottom: 0;
+	margin-top: 5px;
+	padding-top: 5px;
+	background-color: rgba(100,135,239,0.2);
+}
+footer p{
+	font-size: 12px;
 }
