@@ -7,14 +7,16 @@ angular.module('RouteControllers', [])
 
 		$scope.submitForm = function() {
 			if($scope.signupForm.$valid){
-				$scope.signupUser.username = $scope.user.username;
-				$scope.signupUser.password = $scope.user.password;
+				$scope.signupUser.firstName = $scope.user.firstName;
+				$scope.signupUser.lastName = $scope.user.lastName;
 				$scope.signupUser.email = $scope.user.email;
+				$scope.signupUser.recieve = $scope.user.recieve;
 			}
-			console.log($scope.signupUser.username + " " + $scope.signupUser.password + " " + $scope.signupUser.email);
 		}
 		$scope.submitted = function(){
-			alert("sick one " + $scope.signupUser.username);
+			if($scope.user.recieve){
+				alert("Thank you for selecting that you would like to contribute, we'd love for you to be a part of our team " + $scope.user.firstName + "!");
+			}
 		}
 	})
 	.controller('charactersController', function($scope){

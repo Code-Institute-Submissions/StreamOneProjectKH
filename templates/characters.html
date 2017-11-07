@@ -1,7 +1,9 @@
 <div class="container">
 	<div class="row">
-		<div class="testRed col-sm-12 col-md-12 col-lg-12">
+		<div class="selector testRed col-sm-12 col-md-12 col-lg-12">
 			<h1>Characters</h1>
+			<p>Please use the drop down menu to select a character!</p>
+			<p>Below will show you the character and give some insight into who they are!</p>
 			<select onchange="displayChar(this.value)">
 				<option value="">Please Select</option>
 				<option value="Sora">Sora</option>
@@ -10,16 +12,16 @@
 			</select>
 		</div>
 
-		<div class="testRed col-sm-12 col-md-12 col-lg-12">
+		<div class="nameHeader col-sm-12 col-md-12 col-lg-12">
 			<p id="charName"></p>
 		</div>
-		<div class="testRed col-sm-12 col-md-6 col-lg-4">
+		<div class="bodySection col-sm-12 col-md-6 col-lg-4">
 			<figure id="charImage"></figure>
 		</div>
-		<div class="testRed col-sm-12 col-md-12 col-lg-4">
+		<div class="bodySection col-sm-12 col-md-12 col-lg-4">
 			<p id="charInfo"></p>
 		</div>
-		<div class="testRed col-sm-12 col-md-6 col-lg-4">
+		<div class="bodySection col-sm-12 col-md-6 col-lg-4">
 			<p id="weaponName"></p>
 			<figure id="charWeapon"></figure>
 		</div>

@@ -1,27 +1,41 @@
 <div class="container">
         <div class="row">
-            <div class="testRed col-sm-6">
+            <div class="newsletter col-sm-12 col-md-6 col-lg-6">
                 <form name="signupForm" ng-submit="submitForm()" novalidate>
                     <div class="form-group">
-                        <label>Name</label>
-                        <input type="text" name="name" class="form-control" ng-model="user.username" required>
-                        <p ng-show="signupForm.name.$pristine" class="help-block">Your username is required</p>
+                        <label>First Name</label>
+                        <input type="text" name="firstName" class="form-control" ng-model="user.firstname" required>
+                        <p ng-show="signupForm.firstName.$pristine" class="help-block">Your first name is required</p>
                     </div>
                     <div class="form-group">
-                        <label>Password</label>
-                        <input type="password" name="password" class="form-control" ng-model="user.password" required>
-                        <p ng-show="signupForm.password.$pristine" class="help-block">Your password is required</p>
+                        <label>Last Name</label>
+                        <input type="text" name="lastName" class="form-control" ng-model="user.lastname" required>
+                        <p ng-show="signupForm.lastName.$pristine" class="help-block">Your last name is required</p>
                     </div>
                     <div class="form-group">
                         <label>Email</label>
                         <input type="email" name="email" class="form-control" ng-model="user.email" required>
                         <p ng-show="signupForm.email.$pristine" class="help-block">Your email is required</p>
                     </div>
- 
+                    <div class="form-group check">
+                    	<input type="checkbox" name="recieve" ng-model="user.recieve">
+                    	Please check if you would like to be involved in the expansion
+                    	of this website, we will contact you for opportunities to make your own blog posts on
+                    	our blog section and also put forth suggestions for improvements to be made!
+                    </div>
                     <button type="submit" class="btn btn-primary" ng-disabled="signupForm.$invalid" ng-click="submitted()">Submit</button>
                 </form>
-                <hr>
-                <p>{{signupForm.password.$viewValue}}</p>
+            </div>
+            <div class="newsletter col-sm-12 col-md-6 col-lg-6">
+            	<p>If you would like to sign up to our newsletter, please the form on this 
+            	page! By entering just a few details we can send you updates, letting you know
+            	when new information breaks about the upcoming release of Kingdom Hearts 3 as well
+            	as anything to do with the franchise, including Kingdom Hearts Union Cross!</p>
+            	<p>We will not pass your information on to third parties, nor will we email you
+            	with spam.</p>
+            	<figure id="enemy">
+            		<img alt="Enemy Symbols" src="../img/EnemySymbols.png" height="40%" width="40%">
+            	</figure>
             </div>
         </div>
 </div>
