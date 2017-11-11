@@ -8,6 +8,7 @@ body{
 	background-attachment: fixed;
 	color: white;
 }
+
 .row{
 	font-size: 24px;
 }
@@ -22,11 +23,6 @@ img{
 
 .floatRight{
 	float: right;
-}
-
-.testRed{
-	background-color: rgba(255,0,0,.5);
-	font-size: 24px;
 }
 
 .container{
@@ -48,6 +44,7 @@ img{
 	background-color: rgba(30,40,71,0.7);
 	padding: 25px;
 }
+
 .landingImage{
 	display: block;
 	float: none;
@@ -59,48 +56,69 @@ img{
 .newsletter{
 	background-color: rgba(30,40,71,0.7);
 	padding: 25px;
-	margin: 15px;
-	width: 45%;
+	margin: auto;
+	width: 100%;
 	height: 450px;
 	text-align: justify;
 }
+
 .newsletter img{
 	margin: auto;
 	display: block;
 	float: none;
 }
+
 .check{
 	font-size: 0.5em;
 }
+
 input[type="checkbox"]{
 	margin-right: 4px;
 }
 
 /*Character stylings*/
+
 .selector{
 	background-color: rgba(30,40,71,0.7);
 	text-align: center;
-	margin: auto;
+	margin: 15px auto;
 	display: block;
 }
+
 .selector h1{
 	margin: 5px;
 	font-weight: 900;
 	font-size: 1.4em
 }
+
 .nameHeader{
 	background-color: rgba(30,40,71,0.7);
 	height: 50px;
 }
+
 .bodySection{
 	background-color: rgba(30,40,71,0.7);
-	height: 650px;
+	display: block;
+	margin: 0 auto;
+	text-align: center;
 }
+
+#charImage{
+	display: block;
+	margin: 0 auto;
+}
+
 #charName{
 	text-align: center;
 	font-weight: 900;
 	font-size: 2em;
 }
+
+#weaponName{
+	text-align: center;
+	font-style: italic;
+}
+
 select{
 	color: black;
 	font-size: 0.5em;
@@ -108,20 +126,59 @@ select{
 	display: block;
 }
 
-h2{
-	text-align: center;
+/*Blog stylings*/
+
+.blog{
+	background-color: rgba(30,40,71,0.7);
+}
+
+.blogTop{
+	margin-top: 15px;
 }
 
 .blogHead{
-	display: inline;
 	text-align: center;
 }
+
 .blogHead h2{
 	font-weight: bold;
+	margin: 5px;
 }
 
-.blue{
-	background-color: blue;
+#post1 figure img{
+	margin-right: 5px;
+}
+
+/*Media stylings*/
+
+.trailer{
+	background-color: rgba(30,40,71,0.7);
+	margin-top: 15px;
+}
+
+.audio{
+	background-color: rgba(30,40,71,0.7);
+}
+
+button{
+	width: 100px;
+	text-align: center;
+	margin: 0 auto;
+	display: block;
+}
+
+.mediaButton{
+	display: block;
+	text-align: center;
+	margin: 15px;
+}
+
+.mediaTransition{
+	transition: all 0.5s ease-in;
+}
+
+h2{
+	text-align: center;
 }
 
 footer{
@@ -135,4 +192,55 @@ footer{
 }
 footer p{
 	font-size: 12px;
+}
+
+/*Screen sizings*/
+
+/*Phones*/
+@media screen and (max-width: 767px){
+	p{
+		font-size: 18px;
+		text-align: justify;
+	}
+
+	.bodySection{
+		height: 400px;
+	}
+
+	.infoSection{
+		height: 150px;
+	}
+
+	#ps4Img{
+		height: 187px;
+		width: 300px;
+	}
+
+	#soraImg{
+		height: 470px;
+		width: 320px;
+		display: block;
+	}
+}
+
+/*Medium desktops*/
+@media (min-width: 992px) and (max-width: 1199px){
+	.newsletter{
+		width: 45%;
+		margin: 15px;
+	}
+	.bodySection{
+		height: 650px;
+	}
+}
+
+/*Large desktops*/
+@media screen and (min-width: 1200px){
+	.newsletter{
+		width: 45%;
+		margin: 15px;
+	}
+	.bodySection{
+		height: 650px;
+	}
 }

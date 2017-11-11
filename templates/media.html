@@ -1,21 +1,25 @@
 <div class="container">
 	<div class="row">
-		<div class="testRed col-sm-12" ng-controller="trailerController">
-			<h2>Here is where a trailer will go</h2>
-			<button type="button" class="btn btn-primary btn-lg" id="btnTrailer" ng-click="toggle()">Trailer</button>
-			<div id="trailer" ng-show="reveal">
-				<video controls="controls">
-					<source src="img/KH3Trailer.mp4"/>
-				</video>
+		<div class="trailer col-sm-12" ng-controller="trailerController">
+			<h2>Please click on the button below to watch the most recent trailer for Kingdom Hearts 3</h2>
+			<div class="mediaButton">
+				<button type="button" class="btn btn-primary btn-lg" id="btnTrailer" ng-click="toggle()">Trailer</button>
+				<div ng-show="reveal"  class="mediaTransition">
+					<video height="70%" width="70%" controls="controls">
+						<source src="img/KH3Trailer.mp4"/>
+					</video>
+				</div>
 			</div>
 		</div>
-		<div class="testRed col-sm-12" ng-controller="audioController">
-			<h2>Here is where an audio clip will go</h2>
-			<button type="button" class="btn btn-primary btn-lg" id="btnAudio" ng-click="toggle()">Song</button>
-			<div ng-show="reveal">
-				<audio controls="controls">
-					<source src="img/DearlyBeloved.ogg" type="audio/ogg; codecs=vorbis"/>
-				</audio>
+		<div class="audio col-sm-12" ng-controller="audioController">
+			<h2>Please click on the button below to listen to Dearly Beloved, one of the most iconic songs in the franchise</h2>
+			<div class="mediaButton">
+				<button type="button" class="btn btn-primary btn-lg" id="btnAudio" ng-click="toggle()">Song</button>
+				<div ng-show="reveal">
+					<audio controls="controls">
+						<source src="img/DearlyBeloved.ogg" type="audio/ogg; codecs=vorbis"/>
+					</audio>
+				</div>
 			</div>
 		</div>
 	</div>
