@@ -9,19 +9,20 @@ This is an app for keeping up to date on the news regarding the current developm
 ## Features
 
 ### Included features
-- Nothing currently.
-
-### Features to Implement
-- Create each view
-	- Home
-	- Trailers
-	- Characters
-	- Blog
-	- Newsletter
 - Angular
-	- Routing for views
-	- Newsletter form
-		- Interact with blog post times
+	- Created views for each section
+		- Home
+			- The entry point to the website
+		- Newsletter
+			- An Angular form view, used for signing up to the sites newsletter
+			- The newsletter also has a check box for asking if you wish to contribute
+		- Characters
+			- A character view for selecting a character and viewing info about them
+			- This takes advantage of custom javascript code, using arrays to store info about the characters
+		- Blog
+			- The main draw for a user of the website, the blog page has several expandable blog posts related to Kingdom Hearts news
+		- Media
+			- This page contains a video and an audio clip which can be expanded when the user clicks the corresponding button
 
 ## Tech Used
 
@@ -34,6 +35,34 @@ This is an app for keeping up to date on the news regarding the current developm
     - We use **npm** to help manage some of the dependencies in our application
 - [bower](https://bower.io/)
     - **Bower** is used to manage the installation of our libraries and frameworks
+
+## Testing
+
+### Javascript
+Manual javascript testing was done throughout this project. The main pieces of javascript used included the AngularJS used for the routing of the views and the form for the newsletter page.
+
+For the characters javascript code, I took a lot of my previous work in games development into this piece, by creating a constructor for my characters.
+- Created a constructor called ```character()```
+- Each character was then instantiated from the constructor
+	- ```var sora = new character()```
+	- inside the parentheses are the objects values which are described in the constructor
+- From there, in the HTML, depending on which is chosen from the dropdown, calls a different if statement
+	- in this statement I change set divs with the object and their values
+
+Initial implementation ran smoothly with the only issue being with using javascript to inject an image into a div. It is also hard when you want an object to hold an image as a value.
+Through the use of [W3 Schools](https://www.w3schools.com/) and [Stack Overflow](https://stackoverflow.com/) I learnt to create a var as a new Image.
+Once creating the image I had to then resize based on the size of the screen. With some manual testing the final process for this is as follows:
+- Create functions which take the source, width and height of an image
+- Create a variable in this function which creates a var as a new Image to hold the image data
+- Whichever image is fed into the function, that id is now that image
+- In my if statements, depending on the character I call the line with the specified parameters ```portrait("img/Sora.png", 320, 600);```
+	- This line is actually embedded within another if statement which checks the screen size and I alter the width and height of the image accordingly
+
+#### Maintained Issues
+Through testing of the website, there are a couple of issues that still persist, but are not a detriment to the overall experience of the website.
+
+- With the characters view, it has been difficult to change the div size with the data that is being injected into the id's depending on the screen size
+	- This has led to parts of the page with blank space where there is a slightly larger div than needed, but when making it smaller, messes with the layout of the content
 
 ## Contributing
 
