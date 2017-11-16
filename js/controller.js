@@ -15,10 +15,10 @@ angular.module('RouteControllers', [])
 		}
 		$scope.submitted = function(){
 			if($scope.user.recieve){
-				alert("Thank you for selecting that you would like to contribute, we'd love for you to be a part of our team " + $scope.signupUser.firstName + "!");
+				alert("Thank you for selecting that you would like to contribute, we'd love for you to be a part of our team " + $scope.user.firstName + "!");
 			}
 			else{
-				alert("Thank you for signing up " + $scope.signupUser.firstName + " we will notify you when new information comes out!");
+				alert("Thank you for signing up " + $scope.user.firstName + " we will notify you when new information comes out!");
 			}
 		}
 	})
