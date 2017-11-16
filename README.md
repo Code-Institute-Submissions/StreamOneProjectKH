@@ -35,6 +35,9 @@ This is an app for keeping up to date on the news regarding the current developm
     - We use **npm** to help manage some of the dependencies in our application
 - [bower](https://bower.io/)
     - **Bower** is used to manage the installation of our libraries and frameworks
+- [BrowserStack](https://www.browserstack.com/)
+	- **BrowserStack** was used for automated testing through multiple browsers and systems
+	- A series of screenshots can be found in the testing folder showcasing the results on phones, tablets and multiple browsers
 
 ## Testing
 
@@ -63,6 +66,9 @@ Through testing of the website, there are a couple of issues that still persist,
 
 - With the characters view, it has been difficult to change the div size with the data that is being injected into the id's depending on the screen size
 	- This has led to parts of the page with blank space where there is a slightly larger div than needed, but when making it smaller, messes with the layout of the content
+
+### Browser Testing
+As mentioned, **BrowserStack** was used for automated testing. With full functionality being achieved across the most popular and most used browsers and systems.
 
 ## Contributing
 
