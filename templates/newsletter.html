@@ -4,12 +4,12 @@
                 <form name="signupForm" ng-submit="submitForm()" novalidate>
                     <div class="form-group">
                         <label>First Name</label>
-                        <input type="text" name="firstName" class="form-control" ng-model="user.firstname" required>
+                        <input type="text" name="firstName" class="form-control" ng-model="user.firstName" required>
                         <p ng-show="signupForm.firstName.$pristine" class="help-block">Your first name is required</p>
                     </div>
                     <div class="form-group">
                         <label>Last Name</label>
-                        <input type="text" name="lastName" class="form-control" ng-model="user.lastname" required>
+                        <input type="text" name="lastName" class="form-control" ng-model="user.lastName" required>
                         <p ng-show="signupForm.lastName.$pristine" class="help-block">Your last name is required</p>
                     </div>
                     <div class="form-group">
